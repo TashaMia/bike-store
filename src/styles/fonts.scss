@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+$poppins: 'Poppins', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+@mixin font-1-xxl {
+   font-family: $poppins;
+   font-weight: 600;
+   font-size: 64px;
+   line-height: 72px;
+  }
+
+ @mixin font-1-xl{
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+ } 
+
+ @mixin font-1-l{
+    font-family: $poppins;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+ } 
+
+ @mixin font-1-m{
+    font-family: $poppins;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+ } 
+
+ @mixin font-1-m-b{
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+ } 
+ @mixin font-1-s{
+    font-family: $poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+ } 
+
+ @mixin font-1-xs{
+    font-family: $poppins;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+ } 
+
+ @mixin font-2-l{
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+ }
+
+ @mixin font-2-l-b{
+    font-family: $roboto;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+ }
+
+ @mixin font-2-m{
+    font-family: $roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+ }
+
+ @mixin font-2-s{
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+ }
+ 
+ @mixin font-2-xs{
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+ }
+ 
+ 
