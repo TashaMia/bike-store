@@ -1,6 +1,11 @@
 import BikeCollection from "./BikeCollection";
 import CompanyDescription from "./CompanyDescription";
+import Footer from "./Footer";
 import Header from "./Header";
+import Partners from "./Partners";
+import QuoteSection from "./QuoteSection";
+import SubscriptionSection from "./SubscriptionSection";
+import TechnologyDescription from "./TechnologyDescription";
 import "/index.css";
 
 function App() {
@@ -27,6 +32,11 @@ function App() {
       <Header />
       <CompanyDescription />
       <BikeCollection bikes={bikes} />
+      <TechnologyDescription />
+      <Partners />
+      <QuoteSection />
+      <SubscriptionSection />
+      <Footer />
     </div>
   );
 }

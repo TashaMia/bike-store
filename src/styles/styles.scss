@@ -21,6 +21,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     .header{
         display: flex;
         justify-content: space-around;
@@ -28,7 +29,7 @@
         padding: 32px;
         background-color: $c12;
         gap: 335px;
-        width: 100%;
+        width:96%;
         .navbar{
             @include font-1-m;
             color: $w;
@@ -120,6 +121,301 @@
                 }
 
             }
+        }
+    }
+    .tech-description-section{
+        height: 960px;
+        width: 100%;
+        background-color: $c11;
+        margin-top:220px;
+       
+        .tech-description-section-text-block{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 20px;
+            width: 549px; 
+            padding:80px 220px;
+           
+            .tech-description-section-text-block__pretitle{
+                @include font-2-l-b;
+                color: $c05;
+            }
+            .tech-description-section-text-block__title{
+                @include font-1-xxl ;
+                color: $w;
+            }
+            .tech-description-section-text-block__text{
+                @include font-2-l;
+                color: $c05;
+                
+            }
+            .tech-description-section-text-block__link{
+                @include font-1-m-b;
+                color: $p01;
+                border-bottom: 4px solid $p01;
+            }
+            .our-plus-block{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                .our-plus{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 8px;
+                    margin-top: 80px;
+                    .our-plus__title{
+                        @include font-1-m-b;
+                        color: $w;
+                     
+                    }
+                    .our-plus__text{
+                        @include font-2-s;
+                        color: $c05;
+                    }
+                }
+            }
+        }
+        
+    }
+    .partners-section{
+        height: 712px;
+        background-color: $w;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 70px;
+        .partners-section__title{
+           @include font-1-xxl;
+            color:$c11;
+            margin-left: 220px;
+            margin-top: 56px;
+
+        }
+        .partners-section__partners{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 1500px;
+            height: 230px;
+            margin-left: 60px;
+            
+            .partners-section__partners__partner{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 320px;
+                height: 94px;
+                padding: 10px 27px;
+                // border-left: 1px solid $c04;
+               
+            }
+            #partner1, #partner2, #partner3{
+                border-right: 1px solid $c04;
+                border-bottom: 1px solid $c04;
+
+            }
+            #partner5, #partner6, #partner7 {
+                border-right: 1px solid $c04;
+            }
+            #partner4{
+                border-bottom: 1px solid $c04;
+
+            }
+            #partner1, #partner5{
+                justify-content: end;
+            }
+            #partner4, #partner8{
+                justify-content: start;
+            }
+            
+        }
+    }
+    .quote-section{
+        display: flex;
+        width: 100%;
+       
+        .quote-block{
+            background-color:$p01;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: start;
+            padding-left: 40px;
+            padding-bottom: 80px;
+            width: 100%;
+           
+            .quote{
+                display: flex;
+                
+                .quote-text{
+                    color: $p05;
+                    font-family: 'Merriweather', sans-serif;
+                    font-size: 36px;
+                    font-style: italic;
+                    font-weight: 900;
+                    line-height: 48px;  
+                    width: 510px;
+                    
+                }
+                
+                #quote-open{
+                    align-self: start;
+                }
+                #quote-close{
+                    align-self: end;
+                }
+                
+
+            }
+            .quote-author{
+                @include font-1-xl;
+                color: $p03;
+                font-size: 24px;
+                padding-left: 40px;
+                padding-top: 32px;
+
+            }
+        }
+    }
+    .subscription-section{
+        width: 86.46%;
+        display: flex;
+        flex-direction: column;
+        gap:104px;
+        padding-top: 60px;
+        padding-left:217px;
+        background-color: $c11;
+        height: 796px;
+        .subscription-section__header{
+            @include font-1-xxl ;
+            color: $c01;
+
+        }
+        .subscription-types{
+            display: flex;
+            align-items: center;
+            gap:41px;
+            .subscription-types__type{
+               
+                border-radius: 5px;
+                background-color:$c12 ;
+                width: 561px;
+                
+                .subscription-types__type__head{
+                    display: flex;
+                    justify-content: space-between;
+                    @include font-1-xl;
+                    font-size: 36px;
+                    line-height: 48px;
+                   padding-top: 20px;
+                   padding-left: 64px;
+                   padding-right: 32px;
+                    .subscription-types__type__price{
+                        color: $w;
+                    }
+
+                }
+                .list{
+                    display: flex;
+                    flex-direction: column;
+                    gap:20px;
+                    padding-left: 41px;
+                    padding-top: 40px;
+                    .list-item{
+                        @include font-2-m;
+                        list-style-type: none;
+                        color: $w;
+                    }
+                }
+
+            }
+        }
+        #type1{
+            height: 396px;
+            .subscription-types__type__header{
+                color: $c06;
+            }
+        }
+        #type2{
+            height: 484px;
+            .subscription-types__type__header{
+                color: $p01;
+            }
+        }
+        .subscription-section__button{
+            @include font-1-m;
+            border: none;
+            font-weight: 600;
+            display: inline-flex;
+            padding: 16px 32px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background-color: $c11;
+            color:$c04;
+            margin-left: 60px;
+            margin-top: 32px;
+            cursor: pointer;
+            &:hover{
+                background: var(--Gradiente, linear-gradient(180deg, $p01 0%, $p02 100%));
+                color: $p05;
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        height: 492px;
+        background-color: $c12;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:50px;
+        align-items: start;
+        .footer__main-content-section{
+            display: flex;
+            gap:126px;
+            margin-left: 222px;
+            .footer__main-content-section__contacts{
+                display: flex;
+                flex-direction: column;
+                gap:32px;
+                
+            }
+            .footer__main-content-section__information{
+                display: flex;
+                flex-direction: column;
+                gap:32px;
+                
+            }
+            .footer__main-content-section__header{
+                @include font-2-l-b;
+                color: $w;
+            }
+            .footer__info{
+                @include font-2-l;
+                color: $c05;
+                font-size: 18px;
+                line-height: 36px;
+            }
+            .social-media{
+                display: flex;
+                gap: 32px;
+                align-items: center;
+                
+            }
+        }
+        .firm-c{
+            @include font-2-l;
+            color: $c06;
+            align-self: start;
+            margin-left: 160px;
         }
     }
 }
